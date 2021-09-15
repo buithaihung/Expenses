@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.295);
+}
+div p {
+  text-align: center;
+  font-size: 26px;
+  font-family: "Architects Daughter", cursive;
+  color: black;
+}
+.ExpensesLoading {
+  text-align: center;
+  color: white;
+}
+.ExpensesError {
+  text-align: center;
+  color: red;
+}

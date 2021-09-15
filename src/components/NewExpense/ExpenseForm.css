@@ -1,0 +1,46 @@
+.new-expense__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: rgb(3, 3, 3);
+}
+
+.new-expense__control label {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.new-expense__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(15, 15, 14, 0.774);
+  width: 20rem;
+  max-width: 100%;
+}
+
+.new-expense__actions {
+  text-align: right;
+}
+.new-expense__error{
+  color: rgb(163, 20, 20);
+}
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+.invalid input:focus {
+  border: 1px solid #f38200;
+  background-color: #fbe8d2;
+}
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: #ccc;
+  color: #777272;
+  border-color: #ccc;
+  cursor: not-allowed;
+}

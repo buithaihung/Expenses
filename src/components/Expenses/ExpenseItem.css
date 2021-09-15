@@ -1,0 +1,92 @@
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: whitesmoke;
+}
+
+.expense-item__description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.expense-item h2 {
+  color: #3a3a3a;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: rgb(22, 21, 21);
+}
+
+.expense-item__price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+.expense-item__amount {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+.expense-item__name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  padding: 0.2rem;
+  text-align: center;
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+.expense-item button {
+  font: inherit;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: black;
+  border: 1px solid black;
+  width: 3rem;
+  text-align: center;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin: 0.25rem;
+}
+
+.expense-item button:hover,
+.expense-item button:active {
+  background-color: rgba(216, 216, 216, 0.404);
+  opacity: 1;
+  color: black;
+}
+
+@media only screen and (max-width: 640px) {
+  .expense-item__description h2 {
+    font-size: 0.8rem;
+  }
+  .expense-item__price {
+    text-align: left;
+    font-size: 0.75rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .expense-item__description {
+    gap: 1rem;
+  }
+}
