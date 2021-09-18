@@ -126,6 +126,7 @@ const ExpenseForm = (props) => {
             type="number"
             min="0.01"
             step="0.01"
+            max="1000000"
             onBlur={priceInputBlurHandler}
             value={enteredPrice}
             onChange={priceChangeHandler}

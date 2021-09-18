@@ -1,5 +1,4 @@
 import React from "react";
-import Chart from "../Chart/Chart";
 import ExpensesGraph from "./ExpensesGraph";
 
 const ExpensesChart = (props) => {
@@ -26,7 +25,6 @@ const ExpensesChart = (props) => {
     <div>
       <ExpensesGraph data={chartDataPoints} />
       <br/>
-      <Chart dataPoints={chartDataPoints} />
     </div>
   );
 };
